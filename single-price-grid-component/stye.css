@@ -1,0 +1,158 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 56%, 57%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --font1: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-gray);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+main {
+    background-color: white;
+    max-width: 19.375rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 2.5rem 2.5rem;
+}
+
+.join-our-community,
+.monthly-subscription,
+.why-us {
+    padding: 1rem 1.5rem;
+    font-family: var(--font1);
+}
+
+.join-our-community>h3 {
+    color: var(--light-cyan);
+}
+
+.join-our-community>p {
+    font-size: 0.75rem;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.color1 {
+    color: var(--bright-yellow);
+}
+
+
+h3,
+h4 {
+    padding-bottom: 0.75rem;
+}
+
+/* effects for monthly-subscription section */
+
+.monthly-subscription {
+    background-color: var(--cyan);
+    color: white;
+}
+
+button {
+    color: white;
+    font-family: var(--font1);
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 0.75rem;
+    background-color: var(--bright-yellow);
+    margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+.price-range {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+.price {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.price-per-month {
+    font-size: 0.875rem;
+    font-weight: 200;
+}
+
+/* effects for why-us section */
+
+.why-us {
+    background-color: var(--light-cyan);
+    color: white;
+}
+
+/* font size for monthly-subscription and why-us component */
+
+.fs1 {
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 200;
+}
+
+
+
+@media screen and (min-width:500px) {
+    main {
+        max-width: 36rem;
+        height: auto;
+        display: grid;
+        grid-template-areas: 'fc1 fc1' 'fc2 fc3';
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .join-our-community {
+        grid-area: fc1;
+    }
+
+    .monthly-subscription {
+        grid-area: fc2;
+    }
+
+    .why-us {
+        grid-area: fc3;
+    }
+
+    .join-our-community,
+    .monthly-subscription,
+    .why-us {
+        padding: 1.5rem 1.75rem;
+    }
+
+    .join-our-community>p {
+        font-size: 0.875rem;
+        color: var(--grayish-blue);
+        font-weight: 400;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:610px) {
+    main {
+        margin: 2.5rem 2.5rem;
+    }
+}

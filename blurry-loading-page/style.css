@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+#bg-img {
+    background-image: url(nature.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: blurr;
+    animation-duration: 5s;
+    filter: blur(0px);
+}
+
+@keyframes blurr {
+    0% {
+        filter: blur(10px);
+
+    }
+
+    50% {
+        filter: blur(5px);
+    }
+    
+    100% {
+        filter: blur(0px);
+    }
+}
+
+#bg-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bolder;
+    background: transparent;
+    animation: blurtxt;
+    animation-duration: 6s;
+    opacity: 0%;
+}
+
+@keyframes blurtxt {
+    0% {opacity: 50%;}
+    50% {opacity: 20%;}
+    100% {opacity: 0%;}
+}

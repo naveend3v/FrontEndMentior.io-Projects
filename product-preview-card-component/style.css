@@ -1,0 +1,160 @@
+
+:root {
+    --dark-green: hsl(158, 36%, 37%);
+    --background-color: hsl(30, 38%, 92%);
+    --heading-color: hsl(212, 21%, 14%);
+    --pg-font-color: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Fraunces', serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mobile design 375px */
+
+.content {
+    background-color: var(--White);
+    border-radius: 10px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: auto;
+}
+
+.content2 {
+    padding: 1.5rem;
+}
+
+.color1 {
+    color: var(--pg-font-color);
+}
+
+h1 {
+    color: var(--heading-color);
+    line-height: 1.85rem;
+    padding: .5rem 0;
+    font-family: var(--font2);
+}
+
+.p1 {
+    font-family: var(--font1);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.perfume {
+    font-family: var(--font1);
+    letter-spacing: .2rem;
+    font-size: 0.75rem;
+}
+
+/* price tag */
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.discount-price {
+    font-family: var(--font2);
+    color: var(--dark-green);
+}
+
+.stock-price {
+    font-family: var(--font1);
+    font-size: smaller;
+    text-decoration: line-through;
+    padding-left: 1rem;
+}
+
+/* button element  */
+.btn1 {
+    color: var(--White);
+    background-color: var(--dark-green);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: .75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1 > .cart-text {
+    padding-left: 0.5rem;
+    font-family: var(--font1);
+    font-weight: 500;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background-color: hsl(158, 38%, 27%) ;
+}
+
+@media screen and (min-width:376px) {
+    .content {
+        background-color: var(--White);
+        max-width: 37.5rem;
+        max-height: 22rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .content2 {
+        max-width: 50%;
+        height: auto;
+    }
+}
+@media screen and (min-width:376px) {
+
+    .content1 > .img-mobile {
+        display: none;
+    }
+    
+    .content1 > .img-desktop {
+        width: 100%;
+        height: auto;
+
+    }
+}
+@media screen and (max-width:376px) {
+    
+    .content1 > .img-mobile {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .content1 >.img-desktop {
+        display: none;
+    }
+
+}
+
