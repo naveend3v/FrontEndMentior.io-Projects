@@ -1,4 +1,4 @@
-# FrontEndMentior.io-Projects
+# FrontEndMentor.io-Projects
 | # |  Project Name            | Live Demo Link |
 | :-: | --------------------------- | ---------------------------|
 | 01 | [QR Code Component](https://github.com/naveend3v/FrontEndMentor.io-Projects/tree/main/1-qr-code-component) | [Check Here](https://naveend3v.github.io/FrontEndMentor.io-Projects/1-qr-code-component/) |
