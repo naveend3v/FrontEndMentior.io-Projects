@@ -21,5 +21,5 @@ In this project i have learned about the css grid and template method to easily 
 
 ## Screenshot
 
-![Mobile design](/Mobile%20design.png)
-![Desktop design](/Desktop%20design.png)
+![Mobile design](./Mobile%20design.png)
+![Desktop design](./Desktop%20design.png)
